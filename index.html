@@ -28,18 +28,43 @@
             position: sticky;
             top: 0;
             gap: 14px;
-            padding: 10px 0;
+            padding: 10px 15px;
             background-color: black;
         }
         nav a{
             color: #fff;
             text-decoration: none;
+            padding: 5px 10px;
         }
         nav a:hover{
             background-color: plum;
             padding: 5px 10px;
             border-radius: 12px;
         }
+        .container{           
+            /*  class xa vane . halne
+            ra id xa vane # halne  */
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section{
+            margin-bottom: 20px;
+        }
+        .card{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 16px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .grid{
+                display: grid;
+                grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+                gap:16px;
+            }
+
     </style>
     </head>
     <body>
@@ -54,28 +79,25 @@
             <a href="#react">React</a>
             <a href="#css">CSS</a>
         </nav>
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
-       <p>hello world!</p> 
+        <div class="container">
+            <section id="JavaScript">
+                <h2>JavaScript Bascics</h2>
+                <div class="grid">
+                <div class="card">
+                    <h3>What is JavaScript?</h3>
+                    <p>hello world!</p> 
+       <p>hello world!
+       hello world! hello world!hello world!hello world!hello world!hello world!hello world!</p> 
+       
+                </div>
+                <div class="card">
+                    <h3>What is JavaScript?</h3>
+                    <p>hello world!</p> 
+       <p>hello world!
+       hello world! hello world!hello world!hello world!hello world!hello world!hello world!</p> 
+            </div>
+        </div>
+    </section>
+    </div>
     </body>
 </html>
