@@ -85,10 +85,10 @@
         }
         .grid-form{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
             gap: 24px;
         }
-        .grid-form input{
+        .grid-form input, .grid-form select{
             width: 95%;
             padding: 10px;
             margin-top: 4px;
@@ -149,13 +149,36 @@ hello world! hello world!hello world!hello world!hello world!hello world!hello w
     <form method="post" action="#">
         <div class="grid-form">
             <div>
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" name="Fname" required>
             </div>
             <div>
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" name="Lname" required>
             </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone no:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label>No.of years of experience</label>
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <label>Description</label><br>
+            <textarea name="description" id="description" cols="50" rows="10"></textarea>
+        </div>
         </div>
 
     </form>
